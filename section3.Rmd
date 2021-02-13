@@ -2,7 +2,9 @@
 title: "Productivity R-markdown"
 author: "Jared Coffin"
 date: "2/12/2021"
-output: html_document
+output:
+  html_document: default
+  github_document: default
 ---
 
 ```{r setup, include=FALSE}
@@ -35,11 +37,11 @@ summary(pressure)
 ```
 
 # When echo=FALSE, code will be hided in output file
-```{r echo=FALSE}
+```{r histogram, echo=FALSE}
 summary(pressure)
 ```
 
 # use a descriptive name for each chunk for debugging purpose
-```{r pressure-summary}
+```{r pressure-summary, echo=FALSE}
 summary(pressure)
 ```
