@@ -1,0 +1,14 @@
+```{r, echo=F}
+n <- nrow(mtcars)
+```
+Here `r n` cars are compared
+
+# When echo=FALSE, code will be hided in output file
+```{r echo=FALSE}
+summary(pressure)
+```
+
+# use a descriptive name for each chunk for debugging purpose
+```{r pressure-summary}
+summary(pressure)
+```
